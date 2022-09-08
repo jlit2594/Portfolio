@@ -1,11 +1,31 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(./fonts/Roboto/Roboto-Regular.ttf) format("Regular")
+}
+
+@font-face {
+  font-family: "Tourney";
+  src: url(./fonts/Tourney/Tourney-VariableFont_wdth\,wght.ttf) format("Tourney");
+}
+
 :root {
-  --primary-color: #58d4ed;
+  --primary-color: #14c1a8;
+  --secondary-color: #069841;
 }
 
 body {
   text-align: center;
   background-color: black;
   color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero {
+  background-image: url(./img/space.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 1000px;
 }
 
 .App-logo {
@@ -23,15 +43,38 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   color: white;
-  border-bottom: groove 5px var(--primary-color);
+  background-color: transparent;
+  padding: 1rem;
+}
+
+.name-title {
+  width: 50%;
+  margin: 10rem auto 10rem auto;
 }
 
 .name {
-  font-size: xx-large;
-  margin-right: 1rem;
+  font-family: 'Audiowide', cursive;
+  font-size: 80px;
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0px 0px 5px black, -4px -2px 14px var(--primary-color);
+  float: left;
 }
+
+.profession {
+  font-family: "Audiowide", cursive;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0px 0px 5px black, 4px 2px 14px var(--secondary-color);
+  float: right;
+  margin: 0;
+}
+
 
 .navbar {
   display: flex;
@@ -51,18 +94,14 @@ body {
 }
 
 .first-section {
-  background-image: url(./img/neonblue.jpeg);
-  background-size: cover;
-  margin-bottom: 5rem;
+  margin: 5rem;
 }
 
 .about {
   display: flex;
   flex-direction: row;
   width: 60%;
-  margin: auto;
-  padding: 8rem;
-  background-color: transparent;
+  margin: 1rem auto 3rem auto;
 }
 
 .pic-link {
@@ -82,8 +121,11 @@ body {
 }
 
 .no-line {
+  font-family: "Audiowide", cursive;
   text-decoration: none;
   color: white;
+  font-size: x-large;
+  font-weight: bold;
 }
 
 .no-line:hover {

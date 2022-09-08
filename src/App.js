@@ -7,15 +7,18 @@ import './App.css';
 function App() {
   return (
     <div className="body">
-      <header className='App-header'>
-        <div className='left-nav'>
-          <h1 className='name'>James Litton</h1>
-          <Navigate></Navigate>
+      
+      <div className='hero'>
+        <header className='App-header'>
+          <div className='left-nav'>
+            <Navigate></Navigate>
+          </div>
+        </header>
+        <div className='name-title'>
+          <h1 className='name'>JAMES LITTON</h1>
+          <h2 className='profession'>Web Developer</h2>
         </div>
-        <div>
-
-        </div>
-      </header>
+      </div>
       <main>
         <About></About>
         <Projects></Projects>
@@ -23,5 +26,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
