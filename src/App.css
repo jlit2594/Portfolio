@@ -1,5 +1,11 @@
-.App {
+:root {
+  --primary-color: #58d4ed;
+}
+
+body {
   text-align: center;
+  background-color: black;
+  color: white;
 }
 
 .App-logo {
@@ -14,18 +20,99 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  border-bottom: groove 5px var(--primary-color);
+}
+
+.name {
+  font-size: xx-large;
+  margin-right: 1rem;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-item {
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.first-section {
+  background-image: url(./img/neonblue.jpeg);
+  background-size: cover;
+  margin-bottom: 5rem;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  margin: auto;
+  padding: 8rem;
+  background-color: transparent;
+}
+
+.pic-link {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 50%;
+  border-right: solid 1px white;
+}
+
+.bio {
+  width: 45%;
+}
+
+.links {
+  color: #61dafb;
+  font-size: large;
+}
+
+.no-line {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.no-line:hover {
+  color: var(--primary-color);
+}
+
+.selfie {
+  width: 90%;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 5rem auto 2rem auto;
+}
+
+.project {
+  width: 40%;
+  margin: 1rem;
+}
+
+.project-img {
+  width: 350px;
+  height: 200px;
+  border-radius: 20px;
 }
 
 @keyframes App-logo-spin {

@@ -1,4 +1,5 @@
 import React from 'react';
+import selfie from '../../img/me.jpeg'
 
 function About() {
     const links = [
@@ -17,18 +18,21 @@ function About() {
     ]
 
     return (
-        <section>
-            <div className="">
-                <img />
-                <div>
-                    {links.map((link) => (
-                        <h2><a href={link.source}>{link.title}</a></h2>
-                    ))}
+        <section className='first-section'>
+            <div className='about'>
+                <div className="pic-link col">
+                    <img className='selfie' src={selfie} />
+                    <div>
+                        {links.map((link) => (
+                            <h2 class='links'><a className='no-line' href={link.source}>{link.title}</a></h2>
+                        ))}
+                    </div>
+                </div>
+                <div className='bio col'>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
+            
         </section>
     )
 }

@@ -1,28 +1,20 @@
 import React from 'react';
+import Nav from 'react-bootstrap/Nav';
 
-function Nav() {
-    const tabs = [
-        {
-            title: 'About Me',
-            source: '#'
-        },
-        {
-            title: 'Projects',
-            source: '#'
-        },
-        {
-            title: 'Resume',
-            source: '#'
-        }
-    ]
-
-    return (
-        <nav>
-            {tabs.map((link) => (
-                <h1><a href={link.source}>{link.title}</a></h1>
-            ))}
-        </nav>
-    )
+function Navigate() {
+  return (
+    <Nav class='navbar' variant="tabs" defaultActiveKey="/about">
+      <Nav.Item className='nav-item'>
+        <Nav.Link className='no-line' href="/about">About</Nav.Link>
+      </Nav.Item>
+      <Nav.Item className='nav-item'>
+        <Nav.Link className='no-line' eventKey="/projects">Projects</Nav.Link>
+      </Nav.Item>
+      <Nav.Item className='nav-item'> 
+        <Nav.Link className='no-line' eventKey="/resume">Resume</Nav.Link>
+      </Nav.Item>
+    </Nav>
+  );
 }
 
-export default Nav;
+export default Navigate;
