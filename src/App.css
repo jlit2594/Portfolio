@@ -1,31 +1,22 @@
-@font-face {
-  font-family: "Roboto";
-  src: url(./fonts/Roboto/Roboto-Regular.ttf) format("Regular")
-}
-
-@font-face {
-  font-family: "Tourney";
-  src: url(./fonts/Tourney/Tourney-VariableFont_wdth\,wght.ttf) format("Tourney");
-}
-
 :root {
-  --primary-color: #14c1a8;
-  --secondary-color: #069841;
+  --primary-color: #1f090c;
+  --secondary-color: #e82337;
 }
 
 body {
+  margin-top: 0;
   text-align: center;
-  background-color: black;
+  background-color: var(--primary-color);
   color: white;
   font-family: 'Roboto', sans-serif;
 }
 
 .hero {
-  background-image: url(./img/space.jpeg);
+  background-image: url(./img/sunset1.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   width: auto;
-  height: 1000px;
+  height: 800px;
 }
 
 .App-logo {
@@ -49,43 +40,22 @@ body {
   padding: 1rem;
 }
 
-.name-title {
-  width: 50%;
-  margin: 10rem auto 10rem auto;
-}
-
-.name {
-  font-family: 'Audiowide', cursive;
-  font-size: 80px;
-  font-style: italic;
-  font-weight: bold;
+.welcome {
+  font-family: 'Neonderthaw', cursive;
+  font-size: 190px;
+  letter-spacing: 13px;
   color: white;
-  text-shadow: 0px 0px 5px black, -4px -2px 14px var(--primary-color);
-  float: left;
+  margin-top: 0;
+  padding-top: 19rem;
+  text-shadow: 0px 0px 5px black, 0px 0px 20px var(--secondary-color);
 }
-
-.profession {
-  font-family: "Audiowide", cursive;
-  font-size: 50px;
-  font-style: italic;
-  font-weight: bold;
-  color: white;
-  text-shadow: 0px 0px 5px black, 4px 2px 14px var(--secondary-color);
-  float: right;
-  margin: 0;
-}
-
 
 .navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.left-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  width: 25%;
+  margin: 12rem auto 10rem auto;
 }
 
 .nav-item {
@@ -94,7 +64,7 @@ body {
 }
 
 .first-section {
-  margin: 5rem;
+  margin-top: 10rem;
 }
 
 .about {
@@ -108,7 +78,18 @@ body {
   display: flex;
   flex-direction: column;
   width: 50%;
-  border-right: solid 1px white;
+}
+
+.greeting {
+  font-family: 'Neonderthaw', cursive;
+  font-weight: bold;
+  font-size: 80px;
+}
+
+.farewell {
+  font-family: 'Neonderthaw', cursive;
+  font-weight: bold;
+  font-size: 40px;
 }
 
 .bio {
@@ -116,20 +97,24 @@ body {
 }
 
 .links {
-  color: #61dafb;
-  font-size: large;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .no-line {
-  font-family: "Audiowide", cursive;
+  font-family: 'Righteous', cursive;
   text-decoration: none;
   color: white;
   font-size: x-large;
-  font-weight: bold;
+  font-weight: bolder;
+  letter-spacing: 2px;
 }
 
 .no-line:hover {
-  color: var(--primary-color);
+  color: #f97326;
+  text-shadow: 0px 0px 15px white;
 }
 
 .selfie {

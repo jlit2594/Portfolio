@@ -7,17 +7,9 @@ import './App.css';
 function App() {
   return (
     <div className="body">
-      
       <div className='hero'>
-        <header className='App-header'>
-          <div className='left-nav'>
-            <Navigate></Navigate>
-          </div>
-        </header>
-        <div className='name-title'>
-          <h1 className='name'>JAMES LITTON</h1>
-          <h2 className='profession'>Web Developer</h2>
-        </div>
+          <h1 className='welcome'>Welcome</h1>
+          <Navigate></Navigate>
       </div>
       <main>
         <About></About>

@@ -11,7 +11,7 @@ function Navigate() {
         <Nav.Link className='no-line' eventKey="/projects">Projects</Nav.Link>
       </Nav.Item>
       <Nav.Item className='nav-item'> 
-        <Nav.Link className='no-line' eventKey="/resume">Resume</Nav.Link>
+        <Nav.Link className='no-line' eventKey="/resume">Résumé</Nav.Link>
       </Nav.Item>
     </Nav>
   );
