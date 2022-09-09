@@ -1,18 +1,19 @@
 :root {
-  --primary-color: #1f090c;
-  --secondary-color: #e82337;
+  --primary-color: #17fbcd;
+  --secondary-color: #fc0ffc;
+  --tertiary-color: #15c83e;
 }
 
 body {
   margin-top: 0;
   text-align: center;
-  background-color: var(--primary-color);
+  background-color: black;
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .hero {
-  background-image: url(./img/sunset1.jpeg);
+  background-image: url(./img/palm4.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   width: auto;
@@ -46,7 +47,8 @@ body {
   letter-spacing: 13px;
   color: white;
   margin-top: 0;
-  padding-top: 19rem;
+  margin-bottom: 2rem;
+  padding-top: 24rem;
   text-shadow: 0px 0px 5px black, 0px 0px 20px var(--secondary-color);
 }
 
@@ -54,8 +56,10 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 25%;
-  margin: 12rem auto 10rem auto;
+  width: 35%;
+  margin: 2rem auto 10rem auto;
+  padding-top: 2rem;
+  border-top: solid 2px white;
 }
 
 .nav-item {
@@ -70,37 +74,48 @@ body {
 .about {
   display: flex;
   flex-direction: row;
-  width: 60%;
+  width: 80%;
   margin: 1rem auto 3rem auto;
 }
 
 .pic-link {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 40%;
+  padding-right: 2rem;
+}
+
+.middle {
+  width: 10%;
 }
 
 .greeting {
   font-family: 'Neonderthaw', cursive;
   font-weight: bold;
   font-size: 80px;
+  text-shadow: 0px 0px 5px black, 0px 0px 20px var(--secondary-color);
 }
 
 .farewell {
   font-family: 'Neonderthaw', cursive;
   font-weight: bold;
   font-size: 40px;
+  text-shadow: 0px 0px 5px black, 0px 0px 20px var(--secondary-color);
 }
 
 .bio {
   width: 45%;
+  padding: 2rem;
 }
 
 .links {
-  height: 5rem;
+  height: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
+  color: white;
+  border-left: solid 1px #17fbcd;
+  border-right: solid 1px #17fbcd;
 }
 
 .no-line {
@@ -113,7 +128,7 @@ body {
 }
 
 .no-line:hover {
-  color: #f97326;
+  color: var(--secondary-color);
   text-shadow: 0px 0px 15px white;
 }
 
@@ -123,23 +138,111 @@ body {
   border-radius: 20px;
 }
 
-.projects {
+.second-section {
+  margin-top: 10rem;
+}
+
+.big-projects {
+  width: 80%;
+  margin: auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-evenly;
-  width: 100%;
-  margin: 5rem auto 2rem auto;
+  
 }
 
-.project {
-  width: 40%;
-  margin: 1rem;
-}
-
-.project-img {
-  width: 350px;
-  height: 200px;
+.project-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem;
+  padding: 2rem;
+  border: inset 5px white;
   border-radius: 20px;
+  box-shadow: -5px -5px 15px #fc0ffc, 5px 5px 15px #17fbcd;
+}
+
+.p-bio {
+  width: 40%;
+  padding: 0 2rem 0 2rem;
+}
+
+.p-title {
+  font-family:'Righteous', cursive;
+  font-size: 50px;
+  border-bottom: groove 2px #17fbcd;
+}
+
+.p-footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+#TechThoughts {
+  flex-direction: row-reverse;
+  border: outset 5px white;
+  box-shadow: -5px -5px 15px #17fbcd, 5px 5px 15px #fc0ffc;
+}
+
+.p-img {
+  border: outset 3px white;
+  border-radius: 20px;
+  opacity: 0.5;
+}
+
+.p-img:hover {
+  opacity: 1;
+}
+
+.small-projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 5rem auto 5rem auto;
+}
+
+.s-project {
+  width: 45%;
+  border: inset 3px white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px #15c83e;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.f-line {
+  font-family: 'Righteous', cursive;
+  font-size: medium;
+  text-decoration: none;
+  color: white;
+  margin-left: 2rem;
+}
+
+.f-line:hover {
+  color: var(--secondary-color);
+  text-shadow: 0px 0px 15px white;
+}
+
+.f-links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 10%;
+  align-items: center;
+}
+
+#resume {
+  padding: 1rem;
+  border: solid 2px white;
+  border-radius: 20px;
+}
+
+#resume:hover {
+  box-shadow: 0px 0px 20px #fc0ffc;
 }
 
 @keyframes App-logo-spin {

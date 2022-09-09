@@ -2,6 +2,7 @@ import React from 'react';
 import About from './components/about';
 import Navigate from './components/nav';
 import Projects from './components/projects'
+import Footer from './components/footer';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <About></About>
         <Projects></Projects>
       </main>
+      <Footer></Footer>
     </div>
   );
 }
