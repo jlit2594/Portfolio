@@ -10,9 +10,6 @@ function Navigate() {
       <Nav.Item className='nav-item'>
         <Nav.Link className='no-line' eventKey="/projects">Projects</Nav.Link>
       </Nav.Item>
-      <Nav.Item className='nav-item'> 
-        <Nav.Link className='no-line' id='resume'  eventKey="/resume">Résumé</Nav.Link>
-      </Nav.Item>
     </Nav>
   );
 }

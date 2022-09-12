@@ -1,5 +1,5 @@
 import React from 'react';
-import selfie from '../../img/me.jpeg'
+import selfie from '../../img/headshot.png'
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 function About() {
@@ -8,7 +8,7 @@ function About() {
         <section className='first-section'>
             <div className='about'>
                 <div className="pic-link">
-                    <img className='selfie' src={selfie} />
+                    <img className='selfie' alt='This is my headshot.' src={selfie} />
                 </div>
                  <div className='middle'>
                     <div className='links'>
