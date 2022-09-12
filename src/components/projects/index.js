@@ -50,19 +50,19 @@ function Projects() {
         <section className='second-section'>
             <div className='big-projects'>
             {myProjects.map((project) => (
-                <div className='project-main' id={project.title}>
-                    <div className='project-img'>
-                        <img className='p-img' src={project.img} width='550' height='300' />
-                    </div>
-                    <div className='p-bio'>
-                        <h2 className='p-title'>{project.title}</h2>
-                        <p className='p-desc'>{project.description}</p>
-                        <div className='p-footer'>
-                            <a className='no-line' href={project.link}>Visit the Site</a>
-                            <a className='icon' href={project.github}><FaGithub color='white' fontSize='1.5rem'/></a>
+                <Card className='project-main d-flex flex-row' id={project.title}>
+                    <Card.Img className='p-img' src={project.img}></Card.Img>
+                    <Card.Body className='big-projects'>
+                        <div className='p-bio'>
+                            <Card.Title className='p-title'>{project.title}</Card.Title>
+                            <Card.Text className='p-desc'>{project.description}</Card.Text>
                         </div>
-                    </div>
-                </div>
+                        <div className='p-footer'>
+                            <Card.Link className='no-line' href={project.link}>Visit the Site</Card.Link>
+                            <Card.Link className='icon' href={project.github}><FaGithub color='white' fontSize='1.5rem'/></Card.Link>
+                        </div>
+                    </Card.Body>
+                </Card>
             ))}                
             </div>
             <div className='small-projects'>
@@ -73,7 +73,7 @@ function Projects() {
                             <Card.Text>
                                 {project.description}
                             </Card.Text>
-                            <div className='p-footer'>
+                            <div className='p-footer s-footer'>
                                 <Card.Link className='no-line' href={project.link}>See More</Card.Link>
                                 <Card.Link href={project.github}><FaGithub  color='white' fontSize='1.5rem'/></Card.Link>                                
                             </div>
