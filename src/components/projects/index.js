@@ -39,7 +39,7 @@ function Projects() {
             description: 'PixelView was another group project. The goal was to build a review website where gamers could write reviews about their favorite games.'
         },
         {
-            title: 'ReadMe Generator',
+            title: 'README Generator',
             link: '',
             github: 'https://github.com/jlit2594/readme-generator',
             description: "This is a command-line application that accepts user input and generates a high-quality ReadMe for the project they may be working on."
