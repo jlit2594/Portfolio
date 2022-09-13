@@ -16,8 +16,9 @@ body {
   background-image: url(./img/palm4.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   width: auto;
-  height: 800px;
+  height: 900px;
 }
 
 .App-logo {
@@ -94,14 +95,18 @@ body {
 .greeting {
   font-family: 'Neonderthaw', cursive;
   font-weight: bold;
-  font-size: 80px;
+  font-size: 180px;
   text-shadow: 0px 0px 5px black, 0px 0px 20px var(--secondary-color);
+}
+
+.desc {
+  font-size: 20px;
 }
 
 .farewell {
   font-family: 'Neonderthaw', cursive;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 110px;
   text-shadow: 0px 0px 5px black, 0px 0px 20px var(--secondary-color);
 }
 
@@ -262,6 +267,22 @@ body {
   }
 }
 
+@media screen and (max-width: 2450px) {
+  .greeting {
+    font-size: 150px;
+  }
+
+  .farewell {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 1830px) {
+  .farewell {
+    font-size: 50px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .hero {
     background-position: center;
@@ -270,6 +291,10 @@ body {
   .about {
     width: 100%;
     flex-direction: column;
+  }
+
+  .greeting {
+    font-size: 80px;
   }
 
   .pic-link {
@@ -380,5 +405,39 @@ body {
   .links {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .hero {
+    width: 500px;
+    margin: auto;
+  }
+
+  .navbar {
+    margin: auto;
+  }
+
+  .first-section {
+    width: 500px;
+    margin: auto;
+  }
+
+  .second-section {
+    width: 500px;
+    margin: auto;
+  }
+
+  .nav-item {
+    margin: auto;
+  }
+
+  .small-projects {
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto;
+  }
+
+  .s-project {
+    width: 90%;
+    margin: auto;
   }
 }
