@@ -5,7 +5,7 @@ import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 function About() {
 
     return (
-        <section className='first-section'>
+        <section className='first-section' id='about'>
             <div className='about'>
                 <div className="pic-link">
                     <img className='selfie' alt='This is my headshot.' src={selfie} />
@@ -21,7 +21,7 @@ function About() {
                 <div className='bio'>
                     <span className='greeting'>Hello!</span>
                     <p className='desc'>
-                        
+
                     </p>
                     <span className='farewell'>Thanks for visiting!</span>
                 </div>

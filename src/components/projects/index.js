@@ -47,7 +47,7 @@ function Projects() {
     ]
 
     return (
-        <section className='second-section'>
+        <section className='second-section' id='projects'>
             <div className='big-projects'>
             {myProjects.map((project) => (
                 <Card className='project-main d-flex flex-row' id={project.title}>
