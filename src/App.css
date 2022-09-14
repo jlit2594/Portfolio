@@ -79,6 +79,14 @@ body {
   margin: 1rem auto 3rem auto;
 }
 
+.icon {
+  opacity: .5;
+}
+
+.icon:hover {
+  opacity: 1;
+}
+
 .pic-link {
   display: flex;
   justify-content: space-evenly;

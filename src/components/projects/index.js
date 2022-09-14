@@ -75,7 +75,7 @@ function Projects() {
                             </Card.Text>
                             <div className='p-footer s-footer'>
                                 <Card.Link className='no-line' href={project.link}>See More</Card.Link>
-                                <Card.Link href={project.github}><FaGithub  color='white' fontSize='1.5rem'/></Card.Link>                                
+                                <Card.Link className='icon' href={project.github}><FaGithub  color='white' fontSize='1.5rem'/></Card.Link>                                
                             </div>
 
                         </Card.Body>
