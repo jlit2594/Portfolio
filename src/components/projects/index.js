@@ -1,7 +1,7 @@
 import React from 'react';
 import megaPhoto from '../../img/megabytes.png';
 import climaPhoto from '../../img/weather.png';
-import techPhoto from '../../img/techthoughts.png';
+import listenPhoto from '../../img/listenup.png';
 import Card from 'react-bootstrap/Card';
 import { FaGithub } from 'react-icons/fa';
 
@@ -15,11 +15,11 @@ function Projects() {
             description: "MegaBytes was a group project focusing on delivering a list of the best restaurants in a particular location. It implements a third-party API called 'Global Restaurants'. I handled the API implementation as well as some of the styling."
         },        
         {
-            title: 'TechThoughts',
-            link: 'https://floating-shelf-79387.herokuapp.com/',
-            github: 'https://github.com/jlit2594/blog',
-            img: techPhoto,
-            description: "Tech Thoughts is a blog website specializing in topics surrouding the tech world. It's a full-stack application that I built by myself. I used mostly the same layout as in PixelView, just a little more polished."
+            title: 'Listen Up!',
+            link: 'https://stormy-temple-70664.herokuapp.com/',
+            github: 'https://github.com/jlit2594/hike-project-3',
+            img: listenPhoto,
+            description: "Listen Up! will be a blog site specializing in music. It's still a work in progress."
         },
         {
             title: 'Weather App',

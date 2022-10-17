@@ -1,5 +1,6 @@
 import React from 'react';
 import selfie from '../../img/headshot.png'
+import resume from '../../downloads/Resume 2022.pdf'
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 function About() {
