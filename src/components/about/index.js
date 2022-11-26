@@ -1,9 +1,6 @@
 import React from 'react';
 import Selfie from '../selfie';
 
-import resume from '../../downloads/Resume 2022.pdf'
-
-
 function About() {
 
     return (
