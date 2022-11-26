@@ -5,10 +5,10 @@ function Navigate() {
   return (
     <Nav class='navbar' variant="tabs" defaultActiveKey="#about">
       <Nav.Item className='nav-item'>
-        <Nav.Link className='no-line' href="#about">About</Nav.Link>
+        <Nav.Link className='no-line' href="/">About</Nav.Link>
       </Nav.Item>
       <Nav.Item className='nav-item'>
-        <Nav.Link className='no-line' href="#projects">Projects</Nav.Link>
+        <Nav.Link className='no-line' href="/projects">Projects</Nav.Link>
       </Nav.Item>
     </Nav>
   );

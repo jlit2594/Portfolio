@@ -1,4 +1,6 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import About from './components/about';
 import Navigate from './components/nav';
 import Projects from './components/projects'
@@ -7,18 +9,29 @@ import './App.css';
 
 function App() {
   return (
-    <div className="body">
-      <div className='hero' alt="Image is a synthwave styled palm tree with a green sunset in the background.">
-      {/* Image source is 'https://steamcommunity.com/sharedfiles/filedetails/?l=latam&id=2443460498'  */}
-          <h1 className='welcome'>Welcome</h1>
-          <Navigate></Navigate>
-      </div>
-      <main>
-        <About></About>
-        <Projects></Projects>
-      </main>
-      <Footer></Footer>
-    </div>
+      <BrowserRouter>
+        <div className='body'>
+          <div className='nav'>
+            <h1>James Litton</h1>
+            <Navigate />
+          </div>
+          <div className='main-section'>
+            <Routes>
+              <Route
+                path="/"
+                element={<About />}
+              />
+              <Route
+                path="/projects"
+                element={<Projects />}
+              />
+            </Routes>
+          </div>
+          <div>
+            <Footer />
+          </div>
+        </div>
+      </BrowserRouter>  
   );
 }
 
