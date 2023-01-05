@@ -180,12 +180,6 @@ body {
   align-items: center;
 }
 
-#TechThoughts {
-  flex-direction: row-reverse;
-  border: outset 5px white;
-  box-shadow: -5px -5px 15px #17fbcd, 5px 5px 15px #fc0ffc;
-}
-
 .p-img {
   width: 50%;
   border: outset 3px white;
