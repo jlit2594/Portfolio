@@ -1,7 +1,7 @@
 import React from 'react';
 import megaPhoto from '../../img/megabytes.png';
 import climaPhoto from '../../img/weather.png';
-import listenPhoto from '../../img/listenup.png';
+import techPhoto from '../../img/TechThoughts.png';
 import Card from 'react-bootstrap/Card';
 import { FaGithub } from 'react-icons/fa';
 
@@ -15,11 +15,11 @@ function Projects() {
             description: "MegaBytes was a group project focusing on delivering a list of the best restaurants in a particular location. It implements a third-party API called 'Global Restaurants'. I handled the API implementation as well as some of the styling."
         },        
         {
-            title: 'Listen Up!',
-            link: 'https://stormy-temple-70664.herokuapp.com/',
-            github: 'https://github.com/jlit2594/hike-project-3',
-            img: listenPhoto,
-            description: "Listen Up! will be a blog site specializing in music. It's still a work in progress."
+            title: 'TechThoughts',
+            link: 'https://floating-shelf-79387.herokuapp.com/',
+            github: 'https://github.com/jlit2594/blog',
+            img: techPhoto,
+            description: "A blogging platform focused on posts of the technological variety"
         },
         {
             title: 'Weather App',
@@ -39,10 +39,10 @@ function Projects() {
             description: 'PixelView was another group project. The goal was to build a review website where gamers could write reviews about their favorite games.'
         },
         {
-            title: 'README Generator',
-            link: '',
-            github: 'https://github.com/jlit2594/readme-generator',
-            description: "This is a command-line application that accepts user input and generates a high-quality ReadMe for the project they may be working on."
+            title: 'ListenUp!',
+            link: 'https://stormy-temple-70664.herokuapp.com/',
+            github: 'https://github.com/jlit2594/hike-project-3',
+            description: "Listen Up! will be a blog site specializing in music. It's still a work in progress."
         }
     ]
 
