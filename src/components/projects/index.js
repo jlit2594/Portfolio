@@ -1,7 +1,7 @@
 import React from 'react';
 import megaPhoto from '../../img/megabytes.png';
 import climaPhoto from '../../img/weather.png';
-import techPhoto from '../../img/TechThoughts.png';
+import techPhoto from '../../img/techthoughts.png';
 import Card from 'react-bootstrap/Card';
 import { FaGithub } from 'react-icons/fa';
 
