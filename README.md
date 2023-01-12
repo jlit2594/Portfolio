@@ -1,4 +1,4 @@
-# [James Litton's Portfolio](https://james-litton-portfolio.herokuapp.com/)
+# [James Litton's Portfolio](https://jameslittonportfolio.netlify.app/)
 
 ![This is the hero image at the top of my portfolio site.](./src/img/welcome.png)
 
